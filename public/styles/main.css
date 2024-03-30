@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "MyAverage";
+    src: url('/styles/Average-Regular.ttf');
+}
+
+@font-face {
+    font-family: "MyNeon";
+    src: url('/styles/NeonSans.ttf');
+}
+.neon-text {
+	font-family: 'MyNeon';
+	font-size: 72px;
+	color: #f9e79f;
+	margin: 8px 8px 8px 8px;
+	text-shadow:
+		0 0 2px #ec7063,
+		0 0 04px #f1948a;
+}
+
+body {
+	background: #1A1A1A;
+	font-family: 'MyAverage', serif;
+	font-size: 18px;
+	color: white;
+}
+
+h1 {
+	font-size: 24px;
+	color: #F9E79F;
+}
+
+h2 {
+	font-size: 24px;
+	color: #F9E79F;
+}
+
+.serverListTable {
+	width: 75%;
+}
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+th {
+	padding: 5px;
+	text-align: left;
+}
+td {
+	background-clip: border-box;
+	padding: 5px;
+}
+
+a {
+	color: white;
+}
+a.visited {
+	color: #EC7063;
+}
+a:hover {
+	color: white;
+}
+a:active {
+	color: #EC7063;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #343434;
+}
+	
+li {
+	float: left;
+}
+	
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+}
+	
+li a:hover {
+	background-color: #111;
+}
+
+.content {
+	margin: auto;
+	padding: 10px;
+}
+@media screen and (min-width: 900px) {
+	.content {
+		max-width: 900px;
+  		margin: auto;
+		padding: 10px;
+	}
+	.neon-text {
+		max-width: 900px;
+	}
+}
